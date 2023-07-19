@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:random_color_app/utils/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,13 +12,20 @@ class _HomeScreenState extends State<HomeScreen> {
   // Default background color
   Color _backgroundColor = Colors.white;
 
-  void _changeBackgroundColor() {
+  // Default text
+  String _displayText = 'Hello there';
+
+  void _changeBackgroundColorAndText() {
     setState(() {
       // Generate a random color
       _backgroundColor = _generateRandomColor();
+
+      // Change the displayed text
+      _displayText = _generateRandomText();
     });
   }
 
+  // generate random color functionality
   Color _generateRandomColor() {
     // Generate random RGB values
     final int red = Random().nextInt(256);
@@ -27,20 +35,25 @@ class _HomeScreenState extends State<HomeScreen> {
     return Color.fromARGB(255, red, green, blue);
   }
 
+// generate random test functionality
+  String _generateRandomText() {
+    return texts[Random().nextInt(texts.length)];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hello Solid Software"),
+        title: const Text("Hello Solid Software"),
       ),
       body: GestureDetector(
-        onTap: _changeBackgroundColor,
+        onTap: _changeBackgroundColorAndText,
         child: Container(
           color: _backgroundColor,
           child: Center(
             child: Text(
-              "Hello there",
-              style: TextStyle(fontSize: 24, color: Colors.black),
+              _displayText,
+              style: const TextStyle(fontSize: 24, color: Colors.black),
             ),
           ),
         ),
