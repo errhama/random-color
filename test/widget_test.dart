@@ -14,7 +14,7 @@ void main() {
   // Test homescreen
   testWidgets('HomeScreen displays "Hello there" by default',
       (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(home: HomeScreen()));
+    await tester.pumpWidget(const MaterialApp(home: HomeScreen()));
 
     expect(find.text('Hello there'), findsOneWidget);
   });

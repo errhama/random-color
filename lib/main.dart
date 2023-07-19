@@ -1,16 +1,16 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:random_color_app/screens/home_screen.dart';
 
 void main() {
-  runApp(RandomColorApp());
+  runApp(const RandomColorApp());
 }
 
 class RandomColorApp extends StatelessWidget {
+  const RandomColorApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );

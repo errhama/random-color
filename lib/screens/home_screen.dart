@@ -1,9 +1,13 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:random_color_app/utils/constants.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
