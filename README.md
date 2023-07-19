@@ -2,15 +2,16 @@
 
 A new Flutter project.
 
-## Getting Started
+### Description
 
-This project is a starting point for a Flutter application.
+The application display the text "Hello there" in the middle of the screen and after tapping anywhere on the screen,
+a background color should be changed to a randomly generated color
 
-A few resources to get you started if this is your first Flutter project:
+### Preview 
+<div>
+  <img src='https://github.com/errhama/Grocery_Shop_app/assets/79153644/6a8b05ad-0dae-4328-8df2-0ce6d2d0f979' width='600' height='300'>
+    <img src='https://github.com/errhama/Grocery_Shop_app/assets/79153644/8e635fe8-8c71-40c5-b33f-795d7e03ccd5' width='600' height='300'>
+  </div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ### Commits
+  - [My commits](https://github.com/errhama/random-color/commits/master)
