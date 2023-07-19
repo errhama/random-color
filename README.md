@@ -5,7 +5,7 @@ A new Flutter project.
 ### Description
 
 The application display the text "Hello there" in the middle of the screen and after tapping anywhere on the screen,
-a background color should be changed to a randomly generated color
+a background color changed to a randomly generated color.
 
 ### Preview 
 <div>
